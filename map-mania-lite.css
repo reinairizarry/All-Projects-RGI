@@ -1,0 +1,22 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #269ccc;
+}
+
+h1 {
+color:#feda6a;
+background-color:
+}
+
+#myMapID {
+    height: 100%;
+    width: 100%;
+}
+
+*{
+  font-family: verdana;
+  color: #d4d4dc;
+  font-weight: bold;
+}

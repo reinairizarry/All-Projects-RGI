@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<!--
+    Author:  Reina Irizarry
+    Class:   Web & Distributed Programming
+    Project: Map Mania v2
+    Session: su18-cpsc-24700-lt1
+    Description: This is the first version of Map Mania that I am creating for Programming Assignment 3.
+-->
+    <head>
+      <meta charset="UTF-8">
+      <title>Map Mania Lite</title>
+      <script src="map-mania-lite.js"></script>
+      <link rel="stylesheet" href="map-mania-lite.css">
+    </head>
+    <body onload="initApplication()">
+      <h1>Reina's Atlas Obscura Game</h1>
+      <a href="instructions.html">How to play</a><br><br>
+      Hint: <input id="hint-id" type="text" value="" size="120" disabled><br><br>
+      Score: <input id="score-id" type="text" value="" size="2" disabled><br><br>
+      <div id="myMapID"></div>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVvbQ-oCG-89V-ko-xXvB_AO_xF_k0Nr4&callback=initMap"
+            async defer>
+        </script>
+    </body>
+</html>

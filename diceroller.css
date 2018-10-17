@@ -1,3 +1,5 @@
+/*<Reina Irizarry,Web & Distributed Programming, project3,Fall 2018*/
+
 body{
   background-color: black;
 }
@@ -6,15 +8,12 @@ body{
   color: white;
   font-family: 'Roboto', sans-serif;
   font-family: 'Lobster', cursive;
-
 }
 
 p{
   margin-left: -50px;
-
 }
-
-div.dice{
+div.dice{/*all divs with dice get the below styling*/
 	float:left;
 	width:32px;
   color:black;

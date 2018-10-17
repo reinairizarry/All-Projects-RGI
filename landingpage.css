@@ -4,7 +4,8 @@ body {
 }
 *{
     font-family: 'Montserrat', sans-serif;
-    color: #223A5E;
+    color: black;
     text-align: center;
     font-weight: bold;
+    font-size: 30px;
 }
