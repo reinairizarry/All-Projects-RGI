@@ -12,10 +12,25 @@
       <title>Map Mania Lite</title>
       <script src="map-mania-lite.js"></script>
       <link rel="stylesheet" href="map-mania-lite.css">
+      <link rel="stylesheet" href="gettingStarted.css">
+      <script src="gettingStarted.js"></script>
     </head>
     <body onload="initApplication()">
       <h1>Reina's Atlas Obscura Game</h1>
-      <a href="instructions.html">How to play</a><br><br>
+    <body onload="opengettingStarted()">
+      <button onclick="opengettingStarted()" id="myBtn">How to play</button><br>
+      <!-- Help Information for Modal Window -->
+      <div id="map"></div>
+
+      <div id="helpID" class="help">
+        <div class="help-content">
+          <span onclick="closegettingStarted()" class="close">&times;</span>
+            <h2>Getting Started</h2>
+            <p>Welcome to Map Mania Atlas Obscura Edition. Try to find the locations of the obscure places in the map, dont worry, there will be hints. Think of weird places all over the world. Once you find a location, you will earn a point. The map will reset, and you will be
+                directed to search for the next new location. Once all of the locations are found, you will win the game.</p>
+              <button onclick="closegettingStarted()" >Close Help</button>
+          </div>
+      </div>
       Hint: <input id="hint-id" type="text" value="" size="120" disabled><br><br>
       Score: <input id="score-id" type="text" value="" size="2" disabled><br><br>
       <div id="myMapID"></div>

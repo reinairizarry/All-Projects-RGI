@@ -7,7 +7,7 @@ html, body {
 
 h1 {
 color:#feda6a;
-background-color:
+
 }
 
 #myMapID {
@@ -17,6 +17,6 @@ background-color:
 
 *{
   font-family: verdana;
-  color: #d4d4dc;
+  color: #808080;
   font-weight: bold;
 }

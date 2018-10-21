@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="gettingStarted.css">
+    <script src="gettingStarted.js"></script>
+</head>
+<body onload="opengettingStarted()">
+    <h2>Help Example</h2>
+
+    <button onclick="opengettingStarted()" id="myBtn">How to play</button><br>
+
+    <!-- Help Information for Modal Window -->
+    <div id="helpID" class="help">
+        <!-- Help content -->
+        <div class="help-content">
+            <span onclick="closegettingStarted()" class="close">&times;</span>
+            <h2>Getting Started</h2>
+            <p>Welcome to Map Mania Atlas Obscura Edition. Try to find the locations of the obscure places in the map, dont worry, there will be hints. Think of weird places all over the world. Once you find a location, you will earn a point. The map will reset, and you will be
+              directed to search for the next new location. Once all of the locations are found, you will win the game.</p>
+            <button onclick="closegettingStarted()" >Close Help</button>
+        </div>
+    </div>
+</body>
+</html>
