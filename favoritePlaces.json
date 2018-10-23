@@ -1,0 +1,7 @@
+var atlasObscura = [
+    {content:"Crooked Forest,Poland", coordinates:{lat:53.213889,lng:14.475}, iconImagePath:"tree.png"},
+    {content:"Witch House, Salem", coordinates:{lat:42.5215,lng:-70.8989}, iconImagePath:"house.png"},
+    {content:"Bermuda Triangle,North Alanctic Ocean", coordinates:{lat:27.132481 ,lng:73.086548}, iconImagePath:"triangle.png"},
+    {content:"Pyramids of Giza, Egypt", coordinates:{lat:29.9792,lng:31.1342}, iconImagePath:"flag.png"},
+
+];

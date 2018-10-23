@@ -48,7 +48,7 @@ var score = 10;
 
 
 function initApplication() {
-    console.log('Map Mania Lite - Starting!');
+    console.log('Map Mania Lite is Starting!');
 }
 
 // initMap is a callback function that is initiated as part of the Google Maps API call at the bottom
