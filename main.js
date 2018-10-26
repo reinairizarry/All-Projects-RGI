@@ -4,7 +4,7 @@ var btn = document.getElementById("btn");
 
 btn.addEventListener("click",function(){
   var ourRequest = new XMLHttpRequest();
-  ourRequest.open("GET",'https://learnwebcode.github.io/json-example/animals-' + pageCounter + '.json');
+  ourRequest.open("GET",'https://learnwebcode.github.io/json-example/animals-' + pageCounter + '.json');//add the mustang my hhtps personal and heronames
   ourRequest.onload = function() {
     if (ourRequest.status >= 200 && ourRequest.status < 400) {
       var ourData = JSON.parse(ourRequest.responseText);
@@ -15,7 +15,7 @@ btn.addEventListener("click",function(){
 
   };
 
-  ourRequest.onerror = function() {
+  ourRequest.onerror = function() {//create a function called loadContacts
    console.log("Connection error");
  };
   ourRequest.send();
