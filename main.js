@@ -1,10 +1,11 @@
-var pageCounter = 1;
-var animalContainer = document.getElementById("animal-info");
-var btn = document.getElementById("btn");
+var contactURLArray = [];
+var contactArray = [];
+var loadingContact = 0;
+
 
 btn.addEventListener("click",function(){
   var ourRequest = new XMLHttpRequest();
-  ourRequest.open("GET",'https://learnwebcode.github.io/json-example/animals-' + pageCounter + '.json');//add the mustang my hhtps personal and heronames
+  ourRequest.open("GET",'https://mustang-index.azurewebsites.net/index.json.json');
   ourRequest.onload = function() {
     if (ourRequest.status >= 200 && ourRequest.status < 400) {
       var ourData = JSON.parse(ourRequest.responseText);
@@ -14,16 +15,6 @@ btn.addEventListener("click",function(){
     }
 
   };
-
-  ourRequest.onerror = function() {//create a function called loadContacts
-   console.log("Connection error");
- };
-  ourRequest.send();
-  pageCounter++;
-  if(pageCounter > 3){
-    btn.classList.add("hide-me");
-  }
-});
 
 function renderHTML(data){
   var htmlString =""
@@ -56,29 +47,3 @@ function renderHTML(data){
   animalContainer.insertAdjacentHTML('beforeend',htmlString);
 
 }
-
-
-//  "name": "Michael",
-//  "species": "dog",
-//  "favFood": "peanutButter"
-//}
-
-//var myFavFood = ["cheeseburgers","tacos","sushi"];
-
-//var thePets = [
-  //{
-  //  "name": "Michael",
-    //"species": "dog",
-    //"favFood": "peanutButter"
-//  }
-  //{
-  //  "name": "Cutie",
-  //  "species": "otter",
-    //"favFood": "fish"
-//  }//
-//  {
-  //  "name": "Oliver",
-//    "species": "bunny",
-  //  "favFood": "carrots"
-//  }
-//]

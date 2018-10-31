@@ -1,17 +1,25 @@
+<!--
+    Author:  Reina Irizarry
+    Class:   Web & Distributed Programming
+    Project: Mustang Lite v1
+    Description: This will load index,contacts and to the console.
+-->
 <!doctype html>
-<html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>mustangv1</title>
-  <link rel ="stylesheet" href="jsonAjaxCSS.css">
-</head>
-<body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mustang Lite</title>
+        <link rel="stylesheet" href="mustangv1.css">
+        <script src="mustangv1.js"></script>
+    </head>
+    <body onload="initApplication()">
+      <h1>Mustang v1</h1>
+        <button onclick="loadIndex()">Load Index</button><br>
+        <p id="indexID"></p>
 
-<header>
-  <h1>JSON and AJAX</h1>
-  <button id="btn">Fetch Info for 3 New Animals</button>
-</header>
+        <button onclick="loadContacts()">Load Contacts</button><br>
+        <p id="contactsID"></p>
 
-<div id="animal-info"></div>
-
-<script src='main.js'></script>
+        <button onclick="logContacts()">Log Contacts to Console</button><br>
+    </body>
+</html>
