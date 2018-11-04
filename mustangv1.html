@@ -11,9 +11,24 @@
         <title>Mustang Lite</title>
         <link rel="stylesheet" href="mustangv1.css">
         <script src="mustangv1.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
+    <div>
+    <script>
+    $(document).ready(function(){
+        $(document).ajaxError(function(){
+            alert("An error occured!");
+        });
+        $("button").click(function(){
+            $("div").load("wrongfile.txt");
+        });
+    });
+    </script>
+    </div>
+</div>
     <body onload="initApplication()">
       <h1>Mustang v1</h1>
+
         <button onclick="loadIndex()">Load Index</button><br>
         <p id="indexID"></p>
 
